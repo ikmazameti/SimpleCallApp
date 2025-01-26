@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.zegoclouddemoapp"
+    namespace = "com.mawuli.simplecallapp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.zegoclouddemoapp"
-        minSdk = 26
-        targetSdk = 34
+        applicationId = "com.mawuli.simplecallapp"
+        minSdk = 27
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -46,6 +50,9 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation ("com.github.ZEGOCLOUD:zego_uikit_prebuilt_call_android:+")    // add this line in your module-level build.gradle file's dependencies, usually named [app].
 
+    //Add this 3 lines
+    implementation("com.github.ZEGOCLOUD:zego_uikit_prebuilt_call_android:+")
+    implementation("io.coil-kt.coil3:coil:3.0.4")
+    implementation("io.coil-kt.coil3:coil-network-okhttp:3.0.4")
 }

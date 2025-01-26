@@ -17,12 +17,12 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
 
-        maven(url = "https://storage.zego.im/maven")
-        maven(url = "https://www.jitpack.io")
-
+        //Add this 2 lines
+        maven("https://jitpack.io")
+        maven("https://storage.zego.im/maven")
     }
 }
 
-rootProject.name = "ZegoCloud Demo App"
+rootProject.name = "Simple Call App"
 include(":app")
  

@@ -1,4 +1,4 @@
-package com.example.zegoclouddemoapp
+package com.mawuli.simplecallapp
 
 import org.junit.Test
 
